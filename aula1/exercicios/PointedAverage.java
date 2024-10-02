@@ -12,6 +12,7 @@ public class PointedAverage {
 
         System.out.print("Informe a primeira nota: ");
         nota1 = entrada.nextInt();
+        
         System.out.print("Informe a segunda nota: ");
         nota2 = entrada.nextInt();
 
