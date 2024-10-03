@@ -1,5 +1,5 @@
 /*
- *  Programa que realiza a busca binária em um array ordenado.
+ *  Programa que realiza a busca linear em um array ordenado.
  */
 
 package aula1.exercicios;
