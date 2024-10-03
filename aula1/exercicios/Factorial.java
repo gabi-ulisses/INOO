@@ -1,10 +1,14 @@
+/*
+ *  Programa que calcula o fatorial de um número fornecido pelo usuário.
+ */
+
 package aula1.exercicios;
 
 import java.util.Scanner;
 
 public class Factorial {
     
-    public static void main(String[] arg){
+    public static void main(String[] args){
 
         Scanner entrada = new Scanner(System.in);
 

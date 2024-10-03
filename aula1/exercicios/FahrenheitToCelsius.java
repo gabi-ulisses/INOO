@@ -1,3 +1,8 @@
+/*
+ *  Programa que lê uma determinada temperatura em graus Fahrenheit (F), 
+ *  calcula e mostra a conversão para graus Celsius (C). 
+ */
+
 package aula1.exercicios;
 
 import java.util.Scanner;
@@ -5,7 +10,7 @@ import java.util.Scanner;
 public class FahrenheitToCelsius {
     
     public static void main(String[] args) {
-        
+
         Scanner entrada = new Scanner(System.in);
 
         int Fahrenheit;
