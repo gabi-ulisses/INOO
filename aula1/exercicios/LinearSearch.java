@@ -6,7 +6,7 @@ package aula1.exercicios;
 
 import java.util.Scanner;
 
-public class BinarySearch {
+public class LinearSearch {
     public static void main(String[] args){
 
         Scanner entrada = new Scanner(System.in);
