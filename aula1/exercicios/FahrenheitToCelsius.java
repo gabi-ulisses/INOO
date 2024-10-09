@@ -20,6 +20,6 @@ public class FahrenheitToCelsius {
         Fahrenheit = entrada.nextInt();
         Celsius = (Fahrenheit - 32)/1.8;
     
-        System.out.println("Temperatura em graus Celsius: "+Celsius"°");
+        System.out.println("Temperatura em graus Celsius: "+ Celsius +"°");
     }
 }

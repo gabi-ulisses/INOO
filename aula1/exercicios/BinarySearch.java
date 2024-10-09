@@ -21,7 +21,7 @@ public class BinarySearch {
         if (resultado == -1) {
             System.out.println("Número não encontrado no array.");
         } else {
-            System.out.println("Número encontrado na posição " + resultado + " do array!");
+            System.out.println("Número "+ numero +" está na posição " + resultado + " do array!");
         }
     }
 
