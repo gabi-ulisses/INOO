@@ -11,7 +11,6 @@
 
 package aula2.exercicios;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 class Produtos{
