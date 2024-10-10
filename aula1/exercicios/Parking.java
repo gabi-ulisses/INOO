@@ -1,6 +1,6 @@
 /*
  *  Programa que gerencia um estacionamento rotativo de carros. 
- *  O programa deve armazenar a descrição do carro, a placa, o horário de entrada e o horário de saída (despreze os minutos). 
+ *  O programa deve armazenar a descrição do carro, a placa, o horário de ler e o horário de saída (despreze os minutos). 
  *  O estacionamento cobra X reais pela primeira hora de permanência com o automóvel e X/3 pelas demais horas. Além disso, é fornecido um desconto para o pagamento de acordo com a tabela abaixo:
  *   
  *  |               Valor               |    Desconto (%)   |
@@ -13,7 +13,7 @@
  * 
  *      a) Tipo do carro.
  *      b) Placa.
- *      c) Hora da Entrada.
+ *      c) Hora da ler.
  *      d) Hora da Saída.
  *      e) Valor Pago
  * 
@@ -27,7 +27,7 @@ public class Parking {
 
     public static void main(String[] args){
     
-        Scanner entrada = new Scanner(System.in);
+        Scanner ler = new Scanner(System.in);
 
         String tipoCarro;
         int placa, horaEntrada, horaSaida, horasTotal;
@@ -35,15 +35,15 @@ public class Parking {
 
 
         System.out.print("Informe o tipo do carro: ");
-        tipoCarro = entrada.nextLine();
+        tipoCarro = ler.nextLine();
         System.out.print("Informe a placa do carro: ");
-        placa = entrada.nextInt();
-        System.out.print("Informe o horário de entrada: ");
-        horaEntrada = entrada.nextInt();
+        placa = ler.nextInt();
+        System.out.print("Informe o horário de ler: ");
+        horaEntrada = ler.nextInt();
         System.out.print("Informe o horário de saída: ");
-        horaSaida = entrada.nextInt();
+        horaSaida = ler.nextInt();
         System.out.print("Informe o valor da hora de permanência: R$");
-        valorHora = entrada.nextInt();
+        valorHora = ler.nextInt();
 
         horasTotal = horaSaida - horaEntrada;
         
@@ -59,9 +59,10 @@ public class Parking {
 
         System.out.println("\nTipo do carro: "+tipoCarro);
         System.out.println("Placa: "+placa);
-        System.out.println("Hora de entrada: "+horaEntrada+"h");
+        System.out.println("Hora de ler: "+horaEntrada+"h");
         System.out.println("Hora de saída: "+horaSaida+"h");
         System.out.printf("Valor pago: R$%.2f", valorFinal);
 
+        ler.close();
     }
 }

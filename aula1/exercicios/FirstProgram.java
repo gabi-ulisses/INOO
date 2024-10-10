@@ -9,7 +9,7 @@ public class FirstProgram {
     public static void main(String[] args){
 
         // System.out = Sáida
-        // System.in = Entrada
+        // System.in = ler
         // System.err = Erro
 
         // "println" exibe a mensagem na tela e já leva a próxima saída para a linha de baixo;

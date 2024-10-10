@@ -10,13 +10,13 @@ public class Factorial {
     
     public static void main(String[] args){
 
-        Scanner entrada = new Scanner(System.in);
+        Scanner ler = new Scanner(System.in);
 
         int numero, fatorial;
 
         
         System.out.print("Informe um número: ");
-        numero = entrada.nextInt();
+        numero = ler.nextInt();
         
         fatorial = numero;
 
@@ -28,5 +28,6 @@ public class Factorial {
             System.out.print(" "+fatorial);
         }while(numero > 1);
         
+        ler.close();
     }
 }
