@@ -11,17 +11,17 @@ public class PopulationGrowth {
 
         double city1 = 250000;
         double city2 = 265000;
-        double aumento;
-        int i, count = 0;
+        int count = 0;
 
-        for(i = 0; city1 < city2; i++){
-                aumento = city1 * 0.3;
-                city1 += aumento;
-
-                count++;
+        while (city1 < city2) {
+            city1 += city1 * 0.03;
+            city2 += city2 * 0.02; // crescimento de 2% ao ano
+            
+            count++;
         }
+        
 
-        System.out.println("São necessários "+ i +" anos.");
+        System.out.println("São necessários "+ count +" anos para que a cidade 1 ultrapasse a cidade 2.");
 
     }
 }
