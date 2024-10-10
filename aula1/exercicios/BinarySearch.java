@@ -23,6 +23,7 @@ public class BinarySearch {
         } else {
             System.out.println("Número "+ numero +" está na posição " + resultado + " do array!");
         }
+        ler.close();
     }
 
     public static int buscaBinaria(int[] array, int numero) {
