@@ -1,8 +1,13 @@
 package com.searchOrder.model;
 
-public class Search {
+public class Busca {
+    private int array[] = {2, 4, 7, 9, 11};
 
-    public int binarySearch(int[] array, int numero) {
+    public int[] getArray(){ 
+        return array;
+    }
+
+    public int buscaBinaria(int[] array, int numero) {
         int inicio = 0;
         int fim = array.length - 1;
 
@@ -23,13 +28,14 @@ public class Search {
         return -1; // Número não encontrado
     }
 
-    public int linearSearch(int[] array, int numero) {
+    public int buscaLinear(int[] array, int numero) {
     
         for(int i = 0; i < 5; i++){
             if (array[i] == numero) {
-                return 0;
+                return i;
             }
         }
         return -1;
     }
+
 }

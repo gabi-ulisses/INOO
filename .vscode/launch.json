@@ -1,0 +1,106 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "orientacao-a-objetos_1ca1dfaf"
+        },
+        {
+            "type": "java",
+            "name": "Factorial",
+            "request": "launch",
+            "mainClass": "aula1.exercicios.Factorial",
+            "projectName": "orientacao-a-objetos_1ca1dfaf"
+        },
+        {
+            "type": "java",
+            "name": "FahrenheitToCelsius",
+            "request": "launch",
+            "mainClass": "aula1.exercicios.FahrenheitToCelsius",
+            "projectName": "orientacao-a-objetos_1ca1dfaf"
+        },
+        {
+            "type": "java",
+            "name": "FirstProgram",
+            "request": "launch",
+            "mainClass": "aula1.exercicios.FirstProgram",
+            "projectName": "orientacao-a-objetos_1ca1dfaf"
+        },
+        {
+            "type": "java",
+            "name": "Parking",
+            "request": "launch",
+            "mainClass": "aula1.exercicios.Parking",
+            "projectName": "orientacao-a-objetos_1ca1dfaf"
+        },
+        {
+            "type": "java",
+            "name": "PointedAverage",
+            "request": "launch",
+            "mainClass": "aula1.exercicios.PointedAverage",
+            "projectName": "orientacao-a-objetos_1ca1dfaf"
+        },
+        {
+            "type": "java",
+            "name": "ArithmeticAverage",
+            "request": "launch",
+            "mainClass": "aula2.exercicios.ArithmeticAverage",
+            "projectName": "orientacao-a-objetos_1ca1dfaf"
+        },
+        {
+            "type": "java",
+            "name": "PopulationGrowth",
+            "request": "launch",
+            "mainClass": "aula2.exercicios.PopulationGrowth",
+            "projectName": "orientacao-a-objetos_1ca1dfaf"
+        },
+        {
+            "type": "java",
+            "name": "ProductSearch",
+            "request": "launch",
+            "mainClass": "aula2.exercicios.ProductSearch",
+            "projectName": "orientacao-a-objetos_1ca1dfaf"
+        },
+        {
+            "type": "java",
+            "name": "ReadingPrice",
+            "request": "launch",
+            "mainClass": "aula2.exercicios.ReadingPrice",
+            "projectName": "orientacao-a-objetos_1ca1dfaf"
+        },
+        {
+            "type": "java",
+            "name": "SalaryIncrease",
+            "request": "launch",
+            "mainClass": "aula2.exercicios.SalaryIncrease",
+            "projectName": "orientacao-a-objetos_1ca1dfaf"
+        },
+        {
+            "type": "java",
+            "name": "TesteAluno",
+            "request": "launch",
+            "mainClass": "com.gabrielle.academico.view.TesteAluno",
+            "projectName": "orientacao-a-objetos_1ca1dfaf"
+        },
+        
+        {
+            "type": "java",
+            "name": "Launch ViewBinarySearch",
+            "request": "launch",
+            "mainClass": "com.searchOrder.view.ViewBinarySearch",
+            "projectName": "orientacao-a-objetos"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ViewLinearSearch",
+            "request": "launch",
+            "mainClass": "com.searchOrder.view.ViewLinearSearch",
+            "projectName": "Buscas e Ordenação_4071f376"
+        },
+        {
+            "type": "java",
+            "name": "ViewBinarySearch",
+            "request": "launch",
+            "mainClass": "com.searchOrder.view.ViewBinarySearch",
+            "projectName": "Buscas e Ordenação_4071f376"
+        },
+        {
+            "type": "java",
+            "name": "Launch ViewBinarySearch",
+            "request": "launch",
+            "mainClass": "com.searchOrder.view.ViewBinarySearch",
+            "projectName": "orientacao-a-objetos"
+        }
+    ]
+}

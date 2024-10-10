@@ -1,22 +1,22 @@
 package com.searchOrder.view;
 
 import java.util.Scanner;
-import com.searchOrder.model.Search;
+import com.searchOrder.model.Busca;
 
 public class ViewLinearSearch {
 
     public static void main(String[] args) {
-        Search search = new Search();
+       
+        Busca b = new Busca();
 
         Scanner ler = new Scanner(System.in);
 
-        int array[] = {2,4,7,9,11}; // 5 elementos no array
         int numero;
 
         System.out.print("\nInforme um número para iniciar a busca: ");
-        numero = ler.nextInt()
+        numero = ler.nextInt();
 
-        int resultado = search.linearSearch(array, numero);
+        int resultado = b.buscaLinear(b.getArray(), numero);
 
         if (resultado == -1) {
             System.out.println("Número não encontrado no array.");
