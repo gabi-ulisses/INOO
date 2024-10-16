@@ -13,7 +13,7 @@ public class ViewLinearSearch {
 
         int numero;
 
-        System.out.print("\nInforme um número para iniciar a busca: ");
+        System.out.print("\nInforme um número para iniciar uma busca linear no array: ");
         numero = ler.nextInt();
 
         int resultado = b.buscaLinear(b.getArray(), numero);

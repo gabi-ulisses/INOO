@@ -14,7 +14,7 @@ public class ViewBinarySearch{
 
         int numero;
 
-        System.out.print("\nInforme um número para iniciar a busca: ");
+        System.out.print("\nInforme um número para iniciar uma busca binária no array: ");
         numero = ler.nextInt();
 
 
@@ -27,6 +27,6 @@ public class ViewBinarySearch{
         }
         ler.close();
 
-        
+    
     }
 }
