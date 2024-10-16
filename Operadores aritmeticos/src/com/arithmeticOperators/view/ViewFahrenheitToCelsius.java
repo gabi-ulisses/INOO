@@ -3,24 +3,27 @@
  *  calcula e mostra a conversão para graus Celsius (C). 
  */
 
-package aula1.exercicios;
+package com.arithmeticOperators.view;
 
 import java.util.Scanner;
 
-public class FahrenheitToCelsius {
-    
-    public static void main(String[] args) {
+import com.arithmeticOperators.model.ConvertTemp;
+
+public class ViewFahrenheitToCelsius{
+
+    public static void main(String[] args){
+
+        ConvertTemp c = new ConvertTemp();
 
         Scanner ler = new Scanner(System.in);
 
         int Fahrenheit;
-        double Celsius;
 
         System.out.print("Informe a temperatura em Fahrenheit: ");
         Fahrenheit = ler.nextInt();
-        Celsius = (Fahrenheit - 32)/1.8;
-    
-        System.out.println("Temperatura em graus Celsius: "+ Celsius +"°");
+        c.setFahrenheit(Fahrenheit);
+
+        System.out.printf("\n%d°F é igual a %6.0f°C\n\n",Fahrenheit,c.convert(Fahrenheit));
 
         ler.close();
     }

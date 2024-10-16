@@ -1,4 +1,4 @@
-package aula1.exercicios; 
+ 
 
 // "public" = todos podem enxergar essa classe; 
 //  O nome da classe tem que ser o mesmo nome do arquivo.
