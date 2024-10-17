@@ -1,53 +1,73 @@
-/*
- *  Programa que gerencia um estacionamento rotativo de carros. 
- *  O programa deve armazenar a descrição do carro, a placa, o horário de ler e o horário de saída (despreze os minutos). 
- *  O estacionamento cobra X reais pela primeira hora de permanência com o automóvel e X/3 pelas demais horas. Além disso, é fornecido um desconto para o pagamento de acordo com a tabela abaixo:
- *   
- *  |               Valor               |    Desconto (%)   |
- *  |  Até R$ 20 (inclusive)            |        5          |
- *  |  Entre R$ 20 e R$ 50 (inclusive)  |        10         |
- *  |  Acima de R$ 50                   |        20         |
- * 
- * 
- *  O programa deve exibir um relatório contendo as seguintes informações:
- * 
- *      a) Tipo do carro.
- *      b) Placa.
- *      c) Hora da ler.
- *      d) Hora da Saída.
- *      e) Valor Pago
- * 
- */
+package com.conditionalStructures.model;
 
-package aula1.exercicios;
+public class Parking{
 
-import java.util.Scanner;
+    private String tipo;
+    private int placa, horaEntrada, horaSaida;
+    private double valorHora;
 
-public class Parking {
+    // Set:
 
-    public static void main(String[] args){
+    public void setTipo(String tipo){
+        this.tipo = tipo;
+    }
+
+    public void setPlaca(int placa){
+        this.placa = placa;
+    }
+
+    public void setHoraEntrada(int horaEntrada){
+        this.horaEntrada = horaEntrada;
+    }
+
+    public void setHoraSaida(int horaSaida){
+        this.horaSaida = horaSaida;
+    }
+
+    public void setValorHora(double valorHora){
+        this.valorHora = valorHora;
+    }
+
+    // Get:
+
+    public String getTipo(){ 
+        return tipo;
+    }
+
+    public int getPlaca(){ 
+        return placa;
+    }
+   
+    public String getHoraEntrada(){ 
+        return horaEntrada;
+    }
     
-        Scanner ler = new Scanner(System.in);
+    public String getHoraSaida(){ 
+        return horaSaida;
+    }
 
-        String tipoCarro;
-        int placa, horaEntrada, horaSaida, horasTotal;
-        double valorHora, valorFinal;
+    public String getValorHora(){ 
+        return valorHora;
+    }
 
+   
+    // Calculating:
 
-        System.out.print("Informe o tipo do carro: ");
-        tipoCarro = ler.nextLine();
-        System.out.print("Informe a placa do carro: ");
-        placa = ler.nextInt();
-        System.out.print("Informe o horário de ler: ");
-        horaEntrada = ler.nextInt();
-        System.out.print("Informe o horário de saída: ");
-        horaSaida = ler.nextInt();
-        System.out.print("Informe o valor da hora de permanência: R$");
-        valorHora = ler.nextInt();
+    public int calculaHoras(int horaEntrada, int horaSaida){
 
-        horasTotal = horaSaida - horaEntrada;
+        int horasTotal = horaSaida - horaEntrada;
+
+        return horasTotal;
+    }
         
-        valorFinal = valorHora + ((horasTotal - 1)*(valorHora/3));
+    public double calculaValorFinal(double valorHora, int horasTotal){
+
+        double valorFinal = valorHora + ((horasTotal - 1)*(valorHora/3));
+
+        return valorFinal;
+    }
+
+    public double calculaDesconto(double valorFinal){
 
         if (valorFinal <= 20){
             valorFinal -= (valorFinal * 0.05); // Desconto de 5%
@@ -57,12 +77,7 @@ public class Parking {
             valorFinal -= (valorFinal * 0.20); // Desconto de 20%
         }
 
-        System.out.println("\nTipo do carro: "+tipoCarro);
-        System.out.println("Placa: "+placa);
-        System.out.println("Hora de ler: "+horaEntrada+"h");
-        System.out.println("Hora de saída: "+horaSaida+"h");
-        System.out.printf("Valor pago: R$%.2f", valorFinal);
-
-        ler.close();
+        return valorFinal;
     }
+        
 }

@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ViewParking",
+            "request": "launch",
+            "mainClass": "com.conditionalStructures.view.ViewParking",
+            "projectName": "Estruturas condicionais_29c876ba"
+        },
+        {
+            "type": "java",
+            "name": "Parking",
+            "request": "launch",
+            "mainClass": "Parking",
+            "projectName": ""
+        }
+    ]
+}

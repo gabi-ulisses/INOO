@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Banco",
+            "request": "launch",
+            "mainClass": "com.livros.view.Banco",
+            "projectName": "Encapulamento e Construtores_8234bdb5"
+        },
+        {
+            "type": "java",
+            "name": "SimuladorEnergia",
+            "request": "launch",
+            "mainClass": "com.livros.view.SimuladorEnergia",
+            "projectName": "Encapulamento e Construtores_8234bdb5"
+        },
+        {
+            "type": "java",
+            "name": "Livraria",
+            "request": "launch",
+            "mainClass": "com.livros.view.Livraria",
+            "projectName": "Encapulamento e Construtores_8234bdb5"
+        },
+        {
+            "type": "java",
+            "name": "Livraria",
+            "request": "launch",
+            "mainClass": "com.livros.view",
+            "projectName": "Encapulamento e Construtores_8234bdb5"
+        }
+    ]
+}
