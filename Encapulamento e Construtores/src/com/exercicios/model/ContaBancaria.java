@@ -1,4 +1,4 @@
-package com.livros.model;
+package com.exercicios.model;
 
 public class ContaBancaria{
 
@@ -12,6 +12,10 @@ public class ContaBancaria{
 
     public double getSaldo(){
         return saldo;
+    }
+
+    public String getNumeroConta(){
+        return numeroConta;
     }
 
     public double depositar(double valor, double saldo){

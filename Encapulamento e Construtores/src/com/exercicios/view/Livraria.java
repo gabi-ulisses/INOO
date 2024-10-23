@@ -1,6 +1,6 @@
-package com.livros.view;
+package com.exercicios.view;
 
-import com.livros.model.Livro;
+import com.exercicios.model.Livro;
 
 public class Livraria {
 

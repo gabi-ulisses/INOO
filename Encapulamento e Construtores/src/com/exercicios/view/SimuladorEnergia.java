@@ -1,6 +1,6 @@
-package com.livros.view;
+package com.exercicios.view;
 
-import com.livros.model.GeradorSolar;
+import com.exercicios.model.GeradorSolar;
 
 public class SimuladorEnergia{
 

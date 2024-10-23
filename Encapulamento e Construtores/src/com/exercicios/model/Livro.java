@@ -1,4 +1,4 @@
-package com.livros.model;
+package com.exercicios.model;
 
 public class Livro {
 

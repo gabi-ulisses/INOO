@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "EmprestimoLivro",
+            "request": "launch",
+            "mainClass": "com.exercicios.view.EmprestimoLivro",
+            "projectName": "Encapulamento e Construtores_2087d5ca"
+        },
+        {
+            "type": "java",
+            "name": "ControleDrones",
+            "request": "launch",
+            "mainClass": "com.exercicios.view.ControleDrones",
+            "projectName": "Encapulamento e Construtores_2087d5ca"
+        },
+        {
+            "type": "java",
             "name": "Banco",
             "request": "launch",
             "mainClass": "com.livros.view.Banco",

@@ -1,8 +1,8 @@
-package com.livros.view;
+package com.exercicios.view;
 
 import java.util.Scanner;
 
-import com.livros.model.ContaBancaria;
+import com.exercicios.model.ContaBancaria;
 
 public class Banco {
 
