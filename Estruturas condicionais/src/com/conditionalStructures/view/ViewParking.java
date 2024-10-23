@@ -19,49 +19,40 @@
  * 
  */
 
-package aula1.exercicios;
+package com.conditionalStructures.view;
 
 import java.util.Scanner;
 
-public class Parking {
+import com.conditionalStructures.model.Parking;
+
+public class ViewParking {
 
     public static void main(String[] args){
+
+        Parking p = new Parking();
     
         Scanner ler = new Scanner(System.in);
 
-        String tipoCarro;
-        int placa, horaEntrada, horaSaida, horasTotal;
-        double valorHora, valorFinal;
-
-
         System.out.print("Informe o tipo do carro: ");
-        tipoCarro = ler.nextLine();
+        p.setTipo(ler.nextLine());
+
         System.out.print("Informe a placa do carro: ");
-        placa = ler.nextInt();
-        System.out.print("Informe o horário de ler: ");
-        horaEntrada = ler.nextInt();
+        p.setPlaca(ler.nextInt());
+
+        System.out.print("Informe o horário de entrada: ");
+        p.setHoraEntrada(ler.nextInt());
+
         System.out.print("Informe o horário de saída: ");
-        horaSaida = ler.nextInt();
+        p.setHoraSaida(ler.nextInt());
+
         System.out.print("Informe o valor da hora de permanência: R$");
-        valorHora = ler.nextInt();
+        p.setValorHora(ler.nextDouble());
 
-        horasTotal = horaSaida - horaEntrada;
-        
-        valorFinal = valorHora + ((horasTotal - 1)*(valorHora/3));
-
-        if (valorFinal <= 20){
-            valorFinal -= (valorFinal * 0.05); // Desconto de 5%
-        }else if((valorFinal > 20) && (valorFinal <= 50)){
-            valorFinal -= (valorFinal * 0.10); // Desconto de 10%
-        }else{
-            valorFinal -= (valorFinal * 0.20); // Desconto de 20%
-        }
-
-        System.out.println("\nTipo do carro: "+tipoCarro);
-        System.out.println("Placa: "+placa);
-        System.out.println("Hora de ler: "+horaEntrada+"h");
-        System.out.println("Hora de saída: "+horaSaida+"h");
-        System.out.printf("Valor pago: R$%.2f", valorFinal);
+        System.out.println("\nTipo do carro: "+p.getTipo());
+        System.out.println("Placa: "+p.getPlaca());
+        System.out.println("Hora de entrada: "+p.getHoraEntrada()+"h");
+        System.out.println("Hora de saída: "+p.getHoraSaida()+"h");
+        System.out.printf("Valor pago: R$%6.2f", p.calculaValorFinal(p.getValorHora, p.calculaHoras(p.getHoraEntrada(), p.getHoraSaida())));
 
         ler.close();
     }
