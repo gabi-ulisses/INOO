@@ -5,7 +5,7 @@ import com.bookLoan.model.Livro;
 
 public class Main {
     public static void main(String[] args) {
-       // Criando livros
+        // Criando livros
         Livro l1 = new Livro("Java para Iniciantes", "Herbert Schildt");
         Livro l2 = new Livro("Use a Cabeça Java", "Kathy Sierra");
 
@@ -23,7 +23,5 @@ public class Main {
 
         // Emprestando outro livro
         e2.emprestarLivro(l2); // Maria tenta emprestar outro livro, mas já possui um empréstimo
-
-       }
-
+    }
 }

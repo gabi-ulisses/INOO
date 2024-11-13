@@ -4,7 +4,7 @@ public class Cliente {
 
     private String nome;
     private int idade;
-    public Endereco endereco;
+    private Endereco endereco;
 
     public Cliente(String nome, int idade, Endereco endereco){
         this.nome = nome;
@@ -19,5 +19,10 @@ public class Cliente {
     public int getIdade(){
         return this.idade;
     }
+
+    public Endereco getEndereco(){
+        return endereco;
+    }
+
 }
 

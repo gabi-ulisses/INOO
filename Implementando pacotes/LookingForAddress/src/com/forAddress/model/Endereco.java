@@ -9,7 +9,7 @@ public class Endereco {
     private String cidade;
     private String estado;
 
-    public Endereco(String logradouro, int numero, String complemento, int cep, String cidade, String estado){
+    public Endereco(String logradouro, int numero, String complemento, int cep, String cidade, String estado) {
         this.logradouro = logradouro;
         this.numero = numero;
         this.complemento = complemento;
@@ -18,7 +18,8 @@ public class Endereco {
         this.estado = estado;
     }
 
-    public String listarEndereco(){
-        return logradouro;
+    public String listarEndereco() {
+        return logradouro + ", " + numero + (complemento.isEmpty() ? "" : ", " + complemento) + ", " +
+               cidade + " - " + estado + ", CEP: " + cep;
     }
 }

@@ -12,8 +12,6 @@ public class Main {
         System.out.println("Nome: " + cliente.getNome());
         System.out.println("Idade: " + cliente.getIdade());
         System.out.println("Cliente maior de idade: " + Util.Validador(cliente.getIdade()));
-        System.out.println("Endereço: " + cliente.endereco.listarEndereco());
-
-       }
-
+        System.out.println("Endereço: " + cliente.getEndereco().listarEndereco());
+    }
 }

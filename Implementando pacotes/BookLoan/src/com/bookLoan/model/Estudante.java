@@ -3,37 +3,37 @@ package com.bookLoan.model;
 public class Estudante {
 
     private String nome;
-    public Livro livro;
-    public Estudante(String nome){
+    private Livro livroEmprestado;
+
+    public Estudante(String nome) {
         this.nome = nome;
-    }
-    public Estudante(String nome, Livro livro){
-        this.nome = nome;
-        this.livro = livro;
     }
 
-    public String getNome(){
+    public String getNome() {
         return this.nome;
     }
 
     // Método para emprestar o livro
     public void emprestarLivro(Livro livro) {
-        if (livro.isDisponivel()) {
-            this.livro.disponivel = false;
-            System.out.println("\nO livro '" + livro.getTitulo() + "' foi emprestado.");
+        if (livroEmprestado != null) {
+            System.out.println("\n" + nome + " já possui um livro emprestado e não pode emprestar outro.");
+        } else if (!livro.isDisponivel()) {
+            System.out.println("\nO livro '" + livro.getTitulo() + "' não está disponível para empréstimo.");
         } else {
-            System.err.println("\nO livro '" + livro.getTitulo() + "' não está disponível para empréstimo.");
+            this.livroEmprestado = livro;
+            livro.setDisponivel(false);
+            System.out.println("\n" + nome + " emprestou o livro '" + livro.getTitulo() + "'.");
         }
     }
 
     // Método para devolver o livro
     public void devolverLivro() {
-        if (!livro.isDisponivel()) {
-            this.livro.disponivel = true;  // Marca o livro como disponível novamente
-            System.out.println("\nO livro '" + livro.getTitulo() + "' foi devolvido.");
+        if (livroEmprestado != null) {
+            livroEmprestado.setDisponivel(true);
+            System.out.println("\n" + nome + " devolveu o livro '" + livroEmprestado.getTitulo() + "'.");
+            livroEmprestado = null;
         } else {
-            System.out.println("\nO livro '" + livro.getTitulo() + "' já está disponível.");
+            System.out.println("\n" + nome + " não possui nenhum livro para devolver.");
         }
     }
 }
-
