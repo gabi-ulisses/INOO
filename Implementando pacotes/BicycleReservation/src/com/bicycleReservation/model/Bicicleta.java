@@ -1,5 +1,5 @@
 package com.bicycleReservation.model;
-import java.text.SimpleDateFormat;
+
 import java.util.Date;
 
 public class Bicicleta {
@@ -20,7 +20,7 @@ public class Bicicleta {
         this.statusManutencao = false; // Inicialmente sem necessidade de manutenção
     }
 
-    public String getModelo(){
+    public String getModelo() {
         return modelo;
     }
 
@@ -32,25 +32,24 @@ public class Bicicleta {
     public void reservar() {
         if (isDisponivel()) {
             disponivel = false;
-            // Formata a data/hora da reserva
-            SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
-            ultimaReserva = formatter.format(new Date()); // Armazena a data/hora como string
-            System.out.println("Bicicleta " + modelo + " reservada com sucesso em " + ultimaReserva);
+            // Usa o método toString() para converter a data para uma string padrão
+            ultimaReserva = new Date().toString();
+            System.out.println("\nBicicleta " + modelo + " reservada com sucesso em " + ultimaReserva);
         } else {
-            System.out.println("Bicicleta " + modelo + " não está disponível para reserva.");
+            System.out.println("\nBicicleta " + modelo + " não está disponível para reserva.");
         }
     }
 
     public void liberar() {
         disponivel = true;
-        System.out.println("Bicicleta " + modelo + " foi liberada.");
+        System.out.println("\nBicicleta " + modelo + " foi liberada.");
     }
 
     // Método para verificar necessidade de manutenção
     public boolean precisaManutencao() {
         return statusManutencao;
     }
-    
+
     // Método para ativar/desativar status de manutenção
     public void setManutencao(boolean statusManutencao) {
         this.statusManutencao = statusManutencao;

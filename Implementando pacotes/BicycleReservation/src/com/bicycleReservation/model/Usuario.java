@@ -21,14 +21,14 @@ public class Usuario {
     // Método para reservar uma bicicleta
     public void reservarBicicleta(Bicicleta bicicleta) {
         if (statusReserva) {
-            System.out.println("Usuário já possui uma bicicleta reservada.");
+            System.out.println("\nUsuário já possui uma bicicleta reservada.");
         } else if (bicicleta.isDisponivel()) {
             this.bicicletaReservada = bicicleta;
             bicicleta.reservar();
             this.statusReserva = true;
-            System.out.println("Bicicleta " + bicicleta.getModelo() + " reservada para " + nome);
+            System.out.println("\nBicicleta " + bicicleta.getModelo() + " reservada para " + nome);
         } else {
-            System.out.println("Bicicleta não disponível ou em manutenção.");
+            System.out.println("\nBicicleta não disponível ou em manutenção.");
         }
     }
 
@@ -38,9 +38,9 @@ public class Usuario {
             bicicletaReservada.liberar();
             bicicletaReservada = null;
             statusReserva = false;
-            System.out.println("Reserva de bicicleta liberada.");
+            System.out.println("\nReserva de bicicleta liberada.");
         } else {
-            System.out.println("Não há bicicleta para liberar.");
+            System.out.println("\nNão há bicicleta para liberar.");
         }
     }
 
