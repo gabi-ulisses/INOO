@@ -9,7 +9,7 @@ public class Pedido {
 
     public Pedido(Cliente cliente){
         this.cliente = cliente;
-        this.produtos = new ArrayList<>();;
+        this.produtos = new ArrayList<>();
     }
 
     public void setCliente(Cliente cliente){

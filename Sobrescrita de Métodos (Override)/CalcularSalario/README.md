@@ -1,0 +1,1 @@
+Exemplo de implementação de sobrescrita: a classe `Gerente` possui uma implementação específica para o método `calcularBonus()`.
