@@ -1,8 +1,12 @@
-class ValidadorSenha {
+package com.ibag.validator.model;
+
+public class Validador {
+    public Validador() {}
 
     public boolean validarSenha(String senha) {
+        // Verifica se a senha tem pelo menos 8 caracteres
         if (senha.length() < 8) {
-            return false; // Deve ter pelo menos 8 caracteres
+            return false;
         }
 
         boolean temNumero = false;
@@ -16,9 +20,11 @@ class ValidadorSenha {
         for (char c : senha.toCharArray()) {
             if (Character.isDigit(c)) {
                 temNumero = true;
-            } else if (Character.isUpperCase(c)) {
+            } 
+            if (Character.isUpperCase(c)) {
                 temLetraMaiuscula = true;
-            } else if (especiais.indexOf(c) != -1) {
+            } 
+            if (especiais.indexOf(c) != -1) {
                 temCaractereEspecial = true;
             }
 
