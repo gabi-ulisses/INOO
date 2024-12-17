@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GerenciamentoTransportesSemEntrada",
+            "request": "launch",
+            "mainClass": "com.ibag.controlTransport.view.GerenciamentoTransportesSemEntrada",
+            "projectName": "orientacao-a-objetos_1ca1dfaf"
+        },
+        {
+            "type": "java",
+            "name": "GerenciamentoTransportes",
+            "request": "launch",
+            "mainClass": "com.ibag.controlTransport.view.GerenciamentoTransportes",
+            "projectName": "orientacao-a-objetos_1ca1dfaf"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "com.ibag.controlTransport.view.Main",
+            "projectName": "orientacao-a-objetos_1ca1dfaf"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -94,7 +115,6 @@
             "mainClass": "com.gabrielle.academico.view.TesteAluno",
             "projectName": "orientacao-a-objetos_1ca1dfaf"
         },
-        
         {
             "type": "java",
             "name": "Launch ViewBinarySearch",

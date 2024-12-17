@@ -9,6 +9,6 @@ public class Carga {
 
     @Override
     public String toString(){
-        return "Peso da Carga: " + peso + "kg";
+        return "Capacidade da Carga: " + peso + "kg";
     }
 }

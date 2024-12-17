@@ -2,6 +2,8 @@ package com.ibag.controlTransport.model;
 
 public class Caminhao extends Transporte{
     private int numeroEixo;
+    
+
     private String placa;
     private String cor;
 
@@ -11,8 +13,23 @@ public class Caminhao extends Transporte{
         this.cor = cor;
     }
 
+    public int getNumeroEixo() {
+        return numeroEixo;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
     @Override
     public String toString(){
-        return "Tipo de tranporte: Caminhão, " + super.toString() + ", Número de eixos: "+ numeroEixo +  ", Placa: " + placa+", Cor: " + cor;
+        return " Caminhão -> " + super.toString() + 
+               ", Número de eixos: "+ numeroEixo +  
+               ", Placa: " + placa +
+               ", Cor: " + cor;
     }
 }

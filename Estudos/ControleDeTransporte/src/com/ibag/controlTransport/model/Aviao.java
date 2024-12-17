@@ -10,6 +10,7 @@ public class Aviao  extends Transporte{
 
     @Override
     public String toString(){
-        return "Tipo de tranporte: Avião, " + super.toString() + "Autonomia: "+ autonomia;
+        return " Avião -> " + super.toString() + 
+               ", Autonomia: "+ autonomia;
     }
 }

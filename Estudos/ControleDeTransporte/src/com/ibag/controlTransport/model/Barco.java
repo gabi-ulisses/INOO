@@ -16,7 +16,11 @@ public class Barco extends Transporte{
 
     @Override
     public String toString(){
-        return "Tipo de tranporte: Barco, " + super.toString() + ", Comprimento: "+ comprimento +  ", Largura: " + largura+", Bandeira: " + bandeira + ", Número de tripulante: " + numeroTripulantes;
+        return " Barco -> " + super.toString() + 
+               ", Comprimento: "+ comprimento +  
+               ", Largura: " + largura +
+               ", Bandeira: " + bandeira + 
+               ", Número de tripulante: " + numeroTripulantes;
     }    
 }
 

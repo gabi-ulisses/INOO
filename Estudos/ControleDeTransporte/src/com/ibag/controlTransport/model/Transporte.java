@@ -19,6 +19,6 @@ public class Transporte {
     
     @Override
     public String toString(){
-        return "Capacidade de carga: " + carga.toString() + "kg, Dias para entrega: "+ getDiasEntrega();
+        return  carga.toString() + ", Dias para entrega: "+ getDiasEntrega();
     }
 }
