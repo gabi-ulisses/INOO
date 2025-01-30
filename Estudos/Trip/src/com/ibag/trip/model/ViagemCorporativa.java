@@ -1,18 +1,27 @@
-package Estudos.Viagens;
+package com.ibag.trip.model;
 
 import java.time.LocalDate;
 
 public abstract class ViagemCorporativa {
+
+    private int id;
     private String destino;
     private LocalDate dataIda;
     private LocalDate dataVolta;
+    protected final double TAXA = 5.0;
 
-    public ViagemCorporativa(String destino, LocalDate dataIda, LocalDate dataVolta) {
+    
+    public ViagemCorporativa(int id, String destino, LocalDate dataIda, LocalDate dataVolta) {
+        this.id = id;
         this.destino = destino;
         this.dataIda = dataIda;
         this.dataVolta = dataVolta;
     }
 
+    public int getId(){
+        return id;
+    }
+    
     public String getDestino() {
         return destino;
     }
