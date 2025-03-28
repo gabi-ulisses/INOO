@@ -1,4 +1,4 @@
-# Introdução à Orientação a Objetos
+# Introdução à Orientação a Objetos (INOO)
 
 Disciplina "Introdução à Orientação a Objetos", ofertada durante o curso de Tecnologia em Sistemas para Internet - IFSP Campus Araraquara.
 
